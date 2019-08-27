@@ -16,8 +16,8 @@
 :log info "SIM_CHANGE - testing VPN connection..."
 
 :if ([/ping 8.8.8.8 count=5] = 0) do={
-:log info "Looks like not working... Rollback to previous SIM"    
+:log info "SIM_CHANGE - Looks like not working... Rollback to previous SIM"    
 /system routerboard modem set sim-slot=$usedsim
 } else={
-:log info "Looks like it works."
+:log info "SIM_CHANGE - Looks like it works."
 }
