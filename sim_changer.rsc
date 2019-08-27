@@ -11,7 +11,6 @@
 
 :log info "SIM_CHANGE- switching  sim-slot to another one"
 /system routerboard modem set sim-slot=$targetsim
-:put "sim changed"
 :delay 180
 
 :log info "SIM_CHANGE - testing VPN connection..."
