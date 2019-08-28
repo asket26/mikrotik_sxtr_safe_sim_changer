@@ -13,7 +13,7 @@
 /system routerboard modem set sim-slot=$targetsim
 :delay 180
 
-:log info "SIM_CHANGE - testing VPN connection..."
+:log info "SIM_CHANGE - testing  connection..."
 
 :if ([/ping 8.8.8.8 count=5] = 0) do={
 :log info "SIM_CHANGE - Looks like not working... Rollback to previous SIM"    
